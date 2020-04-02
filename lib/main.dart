@@ -4,6 +4,7 @@ import 'package:covid_updates/Screens/homePage.dart';
 import 'package:covid_updates/Screens/preventionPage.dart';
 import 'package:covid_updates/Screens/reportPage.dart';
 import 'package:covid_updates/Screens/symptomsPage.dart';
+import 'package:covid_updates/Screens/masks.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
          '/prevention': (context) => PreventioPage(),
          '/countries' : (context) => Countriespage(),
          '/countryReport' : (context) => CountryReportPage(),
+         '/masks': (context)=> MaskScreen()
       },
     );
   }

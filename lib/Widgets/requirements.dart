@@ -1,3 +1,4 @@
+import 'package:covid_updates/Screens/masks.dart';
 import 'package:flutter/material.dart';
 
 class Requirements extends StatelessWidget {
@@ -6,7 +7,7 @@ class Requirements extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
-        getRequirementItems(context: context, text: 'Mask', imgSrc: 'mask', bgColor: Colors.red[100], imgColor: Colors.red[700]),
+        InkWell(onTap: (){Navigator.pushNamed(context, '/masks');},child: getRequirementItems(context: context, text: 'Mask', imgSrc: 'mask', bgColor: Colors.red[100], imgColor: Colors.red[700])),
         getRequirementItems(context: context, text: 'Gloves', imgSrc: 'gloves', bgColor: Colors.amber[100], imgColor: Colors.amber[700]),
         getRequirementItems(context: context, text: 'Sanitizer', imgSrc: 'alchohol', bgColor: Colors.blue[100], imgColor: Colors.blue[700]),
         getRequirementItems(context: context, text: 'Soap', imgSrc: 'soap', bgColor: Colors.grey[300], imgColor: Colors.grey[700]),
