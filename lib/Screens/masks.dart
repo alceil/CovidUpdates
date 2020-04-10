@@ -1,7 +1,10 @@
+import 'dart:wasm';
+
 import 'package:flutter/material.dart';
 class MaskScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double _width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         title: Text('Mask Using',style:TextStyle(color: Colors.black),),
@@ -20,7 +23,7 @@ class MaskScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Image.asset('assets/images/doctormask.jpg',width: 300,height: 200,fit: BoxFit.fill,),
+            Image.asset('assets/images/doctormask.jpg',width: _width),
             Container(
               padding: EdgeInsets.all(24.0),
               color: Colors.white,
